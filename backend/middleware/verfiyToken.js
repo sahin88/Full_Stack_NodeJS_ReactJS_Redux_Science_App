@@ -19,7 +19,6 @@ const verifyToken=(req, res, next)=>{
     
     else{
         verified=jwt.decode(authorizationtoken);
-        console.log("su vardi dünya stabil degildi", verified.sub)
         req.userId=verified.sub
     }
     req.body=req.body

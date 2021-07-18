@@ -74,7 +74,7 @@ export const createPost =(newpost)=> async(dispatch)=>{
     let token;
     
     if (user.result.googleId){
-        console.log("dünyanin takibi",user.token.id_token.length)
+
         token=user.token.id_token  
     }
 
@@ -113,7 +113,6 @@ export const deletePost =(post_id)=> async(dispatch)=>{
     let token;
     
     if (user.result.googleId){
-        console.log("dünyanin takibi",user.token.id_token.length)
         token=user.token.id_token  
     }
     else{
@@ -153,7 +152,7 @@ export const likesPost=(post_id)=> async(dispatch)=>{
     let token;
     
     if (user.result.googleId){
-        console.log("dünyanin takibi",user.token.id_token.length)
+       
         token=user.token.id_token
         
         
@@ -184,7 +183,6 @@ export const commentPost=(commentData, post_id)=>async(dispatch)=>{
     let token;
     
     if (user.result.googleId){
-        console.log("dünyanin takibi",user.token.id_token.length)
         token=user.token.id_token
         
         
